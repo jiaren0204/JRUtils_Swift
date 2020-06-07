@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "JRUtils_Swift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "__"
   s.description  = '工具集合 Swift'
 
@@ -17,11 +17,12 @@ Pod::Spec.new do |s|
   s.author             = { "梁嘉仁" => "50839393@qq.com" }
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/jiaren0204/JRUtils_Swift.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/jiaren0204/JRUtils_Swift.git", :tag => "0.0.2" }
 
   s.swift_version = '5.0'
 
   s.framework  = "UIKit", "Foundation", "CoreText"
+  s.vendored_frameworks = "JRUtils_Swift/JRUtils_SwiftFramework.framework"
 
   s.subspec 'Extension' do |ss|
     ss.source_files = 'JRUtils_Swift/Classes/Extension/*.swift'
