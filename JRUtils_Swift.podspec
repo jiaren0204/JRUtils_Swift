@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 
   s.framework  = "UIKit", "Foundation", "CoreText"
-  s.vendored_frameworks = "JRUtils_Swift/JRUtils_SwiftFramework.framework"
 
   s.subspec 'Extension' do |ss|
     ss.source_files = 'JRUtils_Swift/Classes/Extension/*.swift'
