@@ -22,6 +22,10 @@ public struct Utils {
         
         return UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
     }
+    
+    public static func angle2Radian(_ x: CGFloat) -> CGFloat {
+        x / 180.0 * CGFloat.pi
+    }
 }
 
 // MARK: 应用帮助
