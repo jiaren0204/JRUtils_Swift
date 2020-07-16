@@ -10,15 +10,20 @@ import Foundation
 import UIKit
 
 public struct APPSize {
-    public static let screenWidth = UIScreen.main.bounds.size.width
-    public static let screenHeight = UIScreen.main.bounds.size.height
+    public static var screenWidth: CGFloat {
+        UIScreen.main.bounds.size.width
+    }
+    
+    public static var screenHeight: CGFloat {
+        UIScreen.main.bounds.size.height
+    }
     
     public static var safeAreaBottom: CGFloat {
-        return Utils.isiPhoneX() ? 34 : 0
+        Utils.isiPhoneX() ? 34 : 0
     }
     
     public static var statusBarHeight: CGFloat {
-        return Utils.isiPhoneX() ? 44 : 20
+        Utils.isiPhoneX() ? 44 : 20
     }
     
     public static let tabbarHeight = safeAreaBottom + 49

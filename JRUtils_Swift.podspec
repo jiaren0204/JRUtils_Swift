@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "JRUtils_Swift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "__"
   s.description  = '工具集合 Swift'
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "梁嘉仁" => "50839393@qq.com" }
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/jiaren0204/JRUtils_Swift.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/jiaren0204/JRUtils_Swift.git", :tag => "0.0.4" }
 
   s.swift_version = '5.0'
 
