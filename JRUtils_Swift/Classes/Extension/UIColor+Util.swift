@@ -50,23 +50,18 @@ extension UIColor {
         
         return (hue, saturation, brightness, alpha)
     }
+    
+    // MARK: 通过Hue判断是否相等
+    static public func == (left: UIColor, right: UIColor) -> Bool {
+        let hue1 = left.getHue()
+        let hue2 = right.getHue()
+        return hue1.hue == hue2.hue &&
+            hue1.saturation == hue2.saturation &&
+            hue1.brightness == hue2.brightness &&
+            hue1.alpha == hue2.alpha
+    }
 }
 
-// MARK: 通过Hue判断是否相等
-precedencegroup ColorPrecedence {
-    associativity: none
-    higherThan: ComparisonPrecedence
-}
-
-infix operator == : ColorPrecedence
-public func == (color1: UIColor, color2: UIColor) -> Bool {
-    let hue1 = color1.getHue()
-    let hue2 = color2.getHue()
-    return hue1.hue == hue2.hue &&
-        hue1.saturation == hue2.saturation &&
-        hue1.brightness == hue2.brightness &&
-        hue1.alpha == hue2.alpha
-}
 
 
 // 颜色alpha符号运算
